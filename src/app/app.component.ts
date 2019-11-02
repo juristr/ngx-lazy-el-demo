@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lazydemo';
+  isVisible = false;
+
+  people = [
+    {
+      name: 'Juri'
+    },
+    {
+      name: 'Thomas'
+    }
+  ];
+
+  addPerson() {
+    this.people.push({
+      name: 'Igor'
+    });
+  }
 }
